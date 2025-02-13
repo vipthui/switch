@@ -19,12 +19,10 @@ static vector<int> calculatePrefixSum(vector<int>& nums) {
 	if (nums.size() == 0) {
 		return numsResult; 
 	}
-
 	numsResult[0] = nums[0]; 
 	for (int i = 1; i < nums.size(); i++) {
 		numsResult[i] = numsResult[i - 1] + nums[i]; 
 	}
-
 	return numsResult;
 }
 static int stepstozero(int n) {
@@ -45,7 +43,6 @@ int main()
 {
 	int intInput = 0;
 	bool isRunning = true;
-
 	while (isRunning) {
 		cout << "Nhap vao menu tuong ung: " << "\n";
 		cout << "1: Bai 1" << "\n";
@@ -76,9 +73,10 @@ int main()
 			break;
 		}
 		case 2: {
-			int int5 = 5;
-			int int8 = 8;
-			cout << "Ket qua cua phep cong 5 + 8 la: " << int5 + int8 << endl;
+			int a, b;
+			a = 5;
+			b = 8;
+			cout << "Ket qua cua phep cong 5 + 8 la: " << a + b << endl;
 			break;
 		}
 		case 3: {
@@ -90,29 +88,29 @@ int main()
 			break;
 		}
 		case 4: {
-			int intSo1;
-			int intSo2;
+			int So1;
+			int So2;
 			cout << "Nhap vao so thu nhat: ";
-			cin >> intSo1;
+			cin >> So1;
 			cout << "Nhap vao so thu hai: ";
-			cin >> intSo2;
-			cout << "Ket qua cua phep cong la: " << intSo1 + intSo2;
+			cin >> So2;
+			cout << "Ket qua cua phep cong la: " << So1 + So2;
 			cout << "\n";
 			break;
 		}
 		case 5: {
-			int intSoA;
-			int intSoB;
+			int SoA;
+			int SoB;
 			int intTemp;
 			cout << "Nhap vao so A: ";
-			cin >> intSoA;
+			cin >> SoA;
 			cout << "Nhap vao so B: ";
-			cin >> intSoB;
-			intTemp = intSoA;
-			intSoA = intSoB;
-			intSoB = intTemp;
-			cout << "So A sau khi hoan vi: " << intSoA << "\n";
-			cout << "So B sau khi hoan vi: " << intSoB << "\n";
+			cin >> SoB;
+			intTemp = SoA;
+			SoA = SoB;
+			SoB = intTemp;
+			cout << "So A sau khi hoan vi: " << SoA << "\n";
+			cout << "So B sau khi hoan vi: " << SoB << "\n";
 			cout << "\n";
 			break;
 		}
