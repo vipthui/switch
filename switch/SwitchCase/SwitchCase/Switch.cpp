@@ -94,7 +94,7 @@ int main()
 			cin >> So1;
 			cout << "Nhap vao so thu hai: ";
 			cin >> So2;
-			cout << "Ket qua cua phep cong la: " << So1 + So2;
+			cout << "Ket qua cua phep cong 2 so la: " << So1 + So2;
 			cout << "\n";
 			break;
 		}
