@@ -38,7 +38,6 @@ static int stepstozero(int n) {
 	}
 	return Steps;
 }
-
 int main()
 {
 	int intInput = 0;
